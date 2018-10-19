@@ -5,10 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build"
   },
+  "homepage": "https://mahmods.github.io/",
   "dependencies": {
     "firebase": "^5.5.4",
+    "gh-pages": "^2.0.1",
     "toastr": "^2.1.4",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
